@@ -10,6 +10,8 @@ ucbadmit_raw <- read.csv("ucb-admit.csv",header=TRUE)
 
 head(ucbadmit_raw)
 
+summary(ucb_data_full)
+
 # 1. Filter, select, and save to a new data frame
 ucbadmit <- ucbadmit_raw %>%
   rename(gender = Gender) %>%
